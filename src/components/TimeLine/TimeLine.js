@@ -26,8 +26,8 @@ const Timeline = () => {
   const carouselRef = useRef();
 
   const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: 'smooth' });
-  }
+    return node.scrollTo({ left, behavior: "smooth" });
+  };
 
   const handleClick = (e, i) => {
     e.preventDefault();
@@ -43,26 +43,45 @@ const Timeline = () => {
 
   const handleScroll = () => {
     if (carouselRef.current) {
-      const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TimeLineData.length);
+      const index = Math.round(
+        (carouselRef.current.scrollLeft /
+          (carouselRef.current.scrollWidth * 0.7)) *
+          TimeLineData.length
+      );
 
       setActiveItem(index);
     }
-  }
+  };
 
   // // snap back to beginning of scroll when window is resized
   // // avoids a bug where content is covered up if coming from smaller screen
   useEffect(() => {
     const handleResize = () => {
       scroll(carouselRef.current, 0);
-    }
+    };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
   }, []);
 
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
-      <SectionText>About me Section-- To Be Added Later</SectionText>
+      <SectionText>
+        From the first time I learned my first programming language C++ in
+        school in 2014, I started loving coding. I studies my Computer Science
+        and played with many languages and technologies till now.
+      </SectionText>
+      <SectionText>
+        I mostly work on ReactJS & Node.js with MongoDB at Backend now. I am
+        currently working as a Full Stack Web Developer. I am very fortunate
+        that I chose coding as my hobby & career too. It feels so grateful to be
+        able to code and contribute in Development of the technology of
+        tomorrow.
+      </SectionText>
+      <SectionText>
+        Alongside programming I love to Play Football, learn Piano, read
+        books(science) and learn about TechBusiness Trends and advancements.
+      </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, ind) => (
@@ -102,7 +121,7 @@ const Timeline = () => {
                           offset="0.79478"
                           stop-color="white"
                           stop-opacity="0"
-                        /> 
+                        />
                       </linearGradient>
                     </defs>
                   </CarouselItemImg>

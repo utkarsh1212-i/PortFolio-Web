@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiBootstrap, DiFirebase, DiGit, DiGithub, DiJavascript, DiMongodb, DiMysql, DiNodejs, DiReact, DiWebplatform, DiZend } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -18,7 +18,12 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience With <br/>
-            ReactJS
+            ReactJS, <DiReact size="2rem" /><br/>
+            NextJS<br/>
+            Javascript <DiJavascript size="2rem" /><br/>
+            RESTful APIs <br/>
+            Redux-ToolKit, RTK Query <br/>
+            WebSockets,<DiWebplatform size="2rem" /> WebRTC  
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -28,17 +33,24 @@ const Technologies = () =>  (
           <ListTitle>Back End</ListTitle>
           <ListParagraph>
             Experience With <br/>
-            NodeJS and Databases
+            NodeJS <DiNodejs size="4rem" /> <br/>
+            Express,<br/>
+            GraphQL, <br/>
+            Databases- MySQL, <DiMysql size="4rem" /><br/> 
+            MongoDB  <DiMongodb size="3rem" />
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <DiZend size="3rem" />
         <ListContainer>
-          <ListTitle>Ui/UX</ListTitle>
+          <ListTitle>Web Design and Other Tools</ListTitle>
           <ListParagraph>
-            Experience With <br/>
-            Tools Like Figma
+            Git <DiGit size="3rem" /> <br/>
+            Github <DiGithub size="3rem" /><br />
+            Bootstrap <DiBootstrap size="3rem" /><br/>
+            Tailwind CSS <br/>
+            
           </ListParagraph>
         </ListContainer>
       </ListItem>
