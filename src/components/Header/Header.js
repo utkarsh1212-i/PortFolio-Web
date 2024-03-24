@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTablet } from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTablet, AiOutlineDownload } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
+
 
 import {
   Container,
@@ -42,8 +43,14 @@ const Header = () => (
       </li>
       <li>
         <Link href={"#about"}>
-          <NavLink>About</NavLink>
+          <NavLink>About Me</NavLink>
         </Link>
+      </li>
+      <li>
+        <a href="images/UtkarshResume.pdf" download={"Utkarsh's Resume"}>
+          <NavLink>Resume</NavLink>
+        </a>
+          {/* <AiOutlineDownload size="3rem" />*/}
       </li>
     </Div2>
     <Div3>

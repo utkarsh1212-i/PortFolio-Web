@@ -16,7 +16,8 @@ const Hero = (props) => (
         I am Utkarsh
       </SectionTitle>
       <SectionText>
-        A Tech Enthusiast working to build and develop products with quality code
+        {/* A Tech Enthusiast working to build and develop products with quality code */}
+        Passionate tech enthusiast dedicated to crafting quality code and building innovative products.
       </SectionText>
       <Button onClick={() => (window.location.href = "#about" )}>
         More About Me
